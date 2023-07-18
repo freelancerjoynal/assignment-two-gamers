@@ -1,0 +1,11 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass ./sass/style.scss css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
