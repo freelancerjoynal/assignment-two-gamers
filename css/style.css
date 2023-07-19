@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .gradient-text {
   background: linear-gradient(to top, #A254E2 44%, #DD4CC1 68%);
   -webkit-background-clip: text;
@@ -328,7 +333,7 @@ header .header .menu-area .social img {
   display: flex;
   align-items: center;
   margin: 10px;
-  max-width: 250px;
+  max-width: 280px;
   padding: 10px;
   border-radius: 50px;
   border: 3px solid rgba(255, 255, 255, 0);
@@ -337,6 +342,10 @@ header .header .menu-area .social img {
 #featured .games .item img {
   width: 40px;
   padding-right: 5px;
+}
+#featured .games .item p {
+  color: black;
+  font-weight: 600;
 }
 #featured .games .item:hover {
   border: 3px solid #FF42A5;
@@ -510,7 +519,7 @@ footer .copyright p {
     margin: 0;
   }
   #featured .games .item img {
-    width: 25px;
+    width: 40px;
   }
   .footerLinks a {
     padding: 0;
