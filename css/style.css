@@ -255,6 +255,12 @@ header .header .menu-area .social {
   #onlineGames h2 {
     font-size: 28px;
   }
+  #onlineGames .games {
+    grid-template-columns: 1fr;
+  }
+  #onlineGames .games .card {
+    margin: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

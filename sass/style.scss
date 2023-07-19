@@ -314,5 +314,13 @@ header {
             font-size: 28px;
         }
 
+        .games{
+            grid-template-columns: 1fr;
+
+            .card{
+                margin: 15px;
+            }
+        }
+
     }
 }
