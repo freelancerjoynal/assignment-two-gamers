@@ -102,14 +102,14 @@ header .header .menu-area .social img {
 }
 
 #hero .info {
-  grid-area: "info";
+  grid-area: info;
 }
 #hero .image-box {
-  grid-area: "imgbox";
+  grid-area: imgbox;
 }
 #hero .hero {
   display: grid;
-  grid-template-areas: "  imgbox info";
+  grid-template-areas: "info imgbox";
   align-items: center;
 }
 #hero .hero .info {

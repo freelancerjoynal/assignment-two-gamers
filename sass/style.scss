@@ -115,16 +115,16 @@ header {
 
 #hero {
     .info {
-        grid-area: 'info';
+        grid-area: info;
     }
 
     .image-box {
-        grid-area: 'imgbox';
+        grid-area: imgbox;
     }
 
     .hero {
         display: grid;
-        grid-template-areas: '  imgbox info';
+        grid-template-areas: 'info imgbox';
         align-items: center;
 
         .info {
