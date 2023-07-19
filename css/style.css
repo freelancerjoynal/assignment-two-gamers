@@ -24,6 +24,7 @@ a {
   background: linear-gradient(to top, #A254E2 44%, #DD4CC1 68%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
 .btn-primary {
@@ -209,6 +210,64 @@ header .header .menu-area .social {
 #onlineGames .games .card:hover .card-text {
   display: block;
 }
+#onlineGames .games-banner-one {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#onlineGames .games-banner-one .info {
+  text-align: right;
+  padding-right: 100px;
+}
+#onlineGames .games-banner-one .info h3 {
+  font-size: 48px;
+  font-weight: 600;
+}
+#onlineGames .games-banner-one .info p {
+  max-width: 250px;
+  float: right;
+  padding: 20px 0px;
+}
+#onlineGames .games-banner-one .image-box {
+  position: relative;
+}
+#onlineGames .games-banner-one .image-box .one {
+  width: 100%;
+}
+#onlineGames .games-banner-one .image-box .two {
+  position: absolute;
+  left: -15%;
+  bottom: -15%;
+}
+#onlineGames .games-banner-two {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#onlineGames .games-banner-two .info {
+  text-align: left;
+}
+#onlineGames .games-banner-two .info h3 {
+  font-size: 48px;
+  font-weight: 600;
+}
+#onlineGames .games-banner-two .info p {
+  max-width: 250px;
+  padding: 20px 0px;
+}
+#onlineGames .games-banner-two .image-box {
+  position: relative;
+}
+#onlineGames .games-banner-two .image-box .one {
+  width: 100%;
+}
+#onlineGames .games-banner-two .image-box .two {
+  position: absolute;
+  right: -15%;
+  bottom: -15%;
+}
 
 @media screen and (max-width: 576px) {
   header {
@@ -260,6 +319,41 @@ header .header .menu-area .social {
   }
   #onlineGames .games .card {
     margin: 15px;
+  }
+  #onlineGames .games-banner-one {
+    flex-direction: column;
+  }
+  #onlineGames .games-banner-one .info {
+    text-align: center;
+    padding: 0;
+  }
+  #onlineGames .games-banner-one .info p {
+    max-width: 90%;
+    float: none;
+  }
+  #onlineGames .games-banner-one .image-box {
+    margin: 15%;
+  }
+  #onlineGames .games-banner-one .image-box .two {
+    width: 100px;
+  }
+  #onlineGames .games-banner-two {
+    flex-direction: column;
+  }
+  #onlineGames .games-banner-two .info {
+    text-align: center;
+    padding: 0;
+  }
+  #onlineGames .games-banner-two .info p {
+    max-width: 90%;
+    float: none;
+  }
+  #onlineGames .games-banner-two .image-box {
+    margin: 15%;
+    margin-top: 0;
+  }
+  #onlineGames .games-banner-two .image-box .two {
+    width: 100px;
   }
 }
 

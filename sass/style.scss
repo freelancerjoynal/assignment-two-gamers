@@ -24,6 +24,7 @@ a {
     background: linear-gradient(to top, #A254E2 44%, #DD4CC1 68%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 
 .btn-primary {
@@ -249,6 +250,67 @@ header {
         .card:hover .card-text{
             display: block;
         }
+ 
+    }
+    .games-banner-one{
+        padding: 100px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .info{
+            text-align: right;
+            padding-right: 100px;
+            h3{
+                font-size: 48px;
+                font-weight: 600;
+            }
+            p{
+                max-width: 250px;
+                float: right;
+                padding: 20px 0px;
+            }
+        }
+        .image-box{
+            position: relative;
+            .one{
+                width: 100%;
+            }
+            .two{
+                position: absolute;
+                left: -15%;
+                bottom: -15%;
+            }
+        }
+        
+    }
+    .games-banner-two{
+        padding: 100px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .info{
+            text-align: left;
+            h3{
+                font-size: 48px;
+                font-weight: 600;
+            }
+            p{
+                max-width: 250px;
+                padding: 20px 0px;
+            }
+        }
+        .image-box{
+            position: relative;
+            .one{
+                width: 100%;
+            }
+            .two{
+                position: absolute;
+                right: -15%;
+                bottom: -15%;
+            }
+        }
+        
     }
 }
 
@@ -319,6 +381,45 @@ header {
 
             .card{
                 margin: 15px;
+            }
+        }
+
+        .games-banner-one{
+            flex-direction: column;
+
+            .info{
+                text-align: center;
+                padding:0;
+
+                p{
+                    max-width: 90%;
+                    float: none;
+                }
+            }
+            .image-box{
+                margin: 15%;
+                .two{
+                    width: 100px;
+                }
+            }
+        }
+        .games-banner-two{
+            flex-direction: column;
+            .info{
+                text-align: center;
+                padding:0;
+
+                p{
+                    max-width: 90%;
+                    float: none;
+                }
+            }
+            .image-box{
+                margin: 15%;
+                margin-top: 0;
+                .two{
+                    width: 100px;
+                }
             }
         }
 
