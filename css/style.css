@@ -2,13 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: auto;
   padding: 0 1%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #FF42A5;
+  padding: 15px 40px;
+  border-radius: 25px;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #4EC5F7;
+  padding: 15px 40px;
+  border-radius: 25px;
+  color: white;
 }
 
 .header {
@@ -26,10 +49,11 @@
   height: 35px;
 }
 .header .logo h4 {
-  font-size: 35px;
+  font-size: 45px;
+  font-weight: 800;
 }
 .header .logo h4 span {
-  color: #F61C0D;
+  color: #FF42A5;
 }
 .header .menu-area {
   display: flex;
@@ -54,6 +78,46 @@
   background-color: #eeeae9;
   border-radius: 5px;
   padding: 10px;
+}
+
+#hero .hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+#hero .hero .info {
+  background-image: url("../images/Group 14.png");
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+}
+#hero .hero .info h3 {
+  font-size: 48px;
+  font-weight: 600;
+}
+#hero .hero .info h2 {
+  font-size: 95px;
+  font-weight: 800;
+  background: #A254E2;
+  background: linear-gradient(to top, #A254E2 44%, #DD4CC1 68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#hero .hero .info .iconlist li {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+#hero .hero .info .iconlist li i {
+  padding-right: 10px;
+}
+#hero .hero .info .actions {
+  margin-top: 50px;
+}
+#hero .image-box {
+  text-align: right;
+}
+#hero .image-box img {
+  width: 80%;
 }
 
 @media screen and (max-width: 576px) {

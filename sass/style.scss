@@ -2,13 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: auto;
     padding: 0 1%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #FF42A5;
+    padding: 15px 40px;
+    border-radius: 25px;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #4EC5F7;
+    padding: 15px 40px;
+    border-radius: 25px;
+    color: white;
 }
 
 .header {
@@ -16,8 +39,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
-
-
 
     .logo {
         display: flex;
@@ -29,51 +50,103 @@
         }
 
         h4 {
-            font-size: 35px;
-            span{
-                color: #F61C0D;
+            font-size: 45px;
+            font-weight: 800;
+
+            span {
+                color: #FF42A5;
             }
         }
     }
 
-    .menu-area{
+    .menu-area {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        a{
+
+        a {
             text-decoration: none;
             color: black;
             text-align: center;
         }
 
-        nav ul{
+        nav ul {
             display: flex;
             justify-content: center;
             gap: 15px;
             margin-right: 40px;
 
-            li{
+            li {
                 list-style-type: none;
             }
         }
 
-        .social{
+        .social {
             background-color: #eeeae9;
             border-radius: 5px;
             padding: 10px;
         }
     }
 }
+
+#hero {
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        .info {
+            background-image: url('../images/Group\ 14.png');
+            background-size: cover;
+            background-position: center center;
+            padding: 50px;
+
+            h3 {
+                font-size: 48px;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-size: 95px;
+                font-weight: 800;
+                background: #A254E2;
+                background: linear-gradient(to top, #A254E2 44%, #DD4CC1 68%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+            .iconlist{
+                li{
+                    font-size: 20px;
+                    padding: 10px 0px;
+                    i{
+                        padding-right: 10px;
+                    }
+                }
+            }
+
+            .actions {
+                margin-top: 50px;
+            }
+        }
+    }
+    .image-box{
+        text-align: right;
+        img{
+            width: 80%;
+        }
+    }
+}
+
 @media screen and (max-width: 576px) {
-    .header{
+    .header {
         flex-direction: column;
-        
 
-        .menu-area{
+
+        .menu-area {
             flex-direction: column;
-            
 
-            nav ul{
+
+            nav ul {
                 flex-direction: column;
                 padding: 50px 0px;
                 margin: auto;
