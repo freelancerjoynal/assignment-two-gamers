@@ -405,10 +405,12 @@ footer .socialLinks ul li a i {
 }
 footer .copyright {
   padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 footer .copyright p {
   text-align: center;
-  color: white;
+  color: rgb(231, 231, 231);
 }
 
 @media screen and (max-width: 576px) {
@@ -530,6 +532,14 @@ footer .copyright p {
   .socialLinks ul li {
     width: 36%;
     text-align: center;
+  }
+  footer .socialLinks ul li a i {
+    color: white;
+    padding: 5px;
+    font-size: 40px;
+  }
+  footer .copyright {
+    flex-direction: column;
   }
 }
 

@@ -497,10 +497,12 @@ footer {
 
     .copyright {
         padding-top: 50px;
+        display: flex;
+        justify-content: center;
 
         p {
             text-align: center;
-            color: white;
+            color: rgb(231, 231, 231);
         }
     }
 }
@@ -673,7 +675,20 @@ footer {
             li {
                 width: 36%;
                 text-align: center;
+                
             }
+        }
+    }
+    footer {
+        .socialLinks {
+            ul li a i {
+                color: white;
+                padding: 5px;
+                font-size: 40px;
+            }
+        }
+        .copyright{
+            flex-direction: column;
         }
     }
 }
