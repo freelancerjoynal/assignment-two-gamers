@@ -448,6 +448,9 @@ footer .copyright p {
     font-size: 60px;
     text-align: center;
   }
+  #hero .hero .actions {
+    text-align: center;
+  }
   #weGamer .weGamer {
     flex-direction: column;
   }
