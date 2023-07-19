@@ -269,6 +269,43 @@ header .header .menu-area .social {
   bottom: -15%;
 }
 
+#career {
+  background-color: #FF42A5;
+}
+#career .career {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+#career .career .info {
+  padding: 100px 10%;
+}
+#career .career .info h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  padding: 20px 0px;
+}
+#career .career .info p {
+  color: white;
+  line-height: 30px;
+}
+#career .career .image-box img {
+  width: 100%;
+}
+#career .career .links {
+  padding: 30px 0px;
+  display: flex;
+  gap: 20px;
+}
+#career .career .links a {
+  color: white;
+  font-size: 24px;
+}
+#career .career .links .right {
+  text-align: right;
+}
+
 @media screen and (max-width: 576px) {
   header {
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.29);
@@ -333,12 +370,13 @@ header .header .menu-area .social {
   }
   #onlineGames .games-banner-one .image-box {
     margin: 15%;
+    margin-bottom: 0;
   }
   #onlineGames .games-banner-one .image-box .two {
     width: 100px;
   }
   #onlineGames .games-banner-two {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   #onlineGames .games-banner-two .info {
     text-align: center;
@@ -350,7 +388,6 @@ header .header .menu-area .social {
   }
   #onlineGames .games-banner-two .image-box {
     margin: 15%;
-    margin-top: 0;
   }
   #onlineGames .games-banner-two .image-box .two {
     width: 100px;
