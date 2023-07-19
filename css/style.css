@@ -294,16 +294,46 @@ header .header .menu-area .social {
   width: 100%;
 }
 #career .career .links {
-  padding: 30px 0px;
   display: flex;
   gap: 20px;
 }
-#career .career .links a {
+#career .career .links li {
+  padding-top: 15px;
+}
+#career .career .links li a {
   color: white;
   font-size: 24px;
 }
 #career .career .links .right {
   text-align: right;
+}
+
+#featured {
+  padding: 100px 0px;
+}
+#featured .games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#featured .games .item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  transition: 0.3s all;
+}
+#featured .games .item img {
+  width: 40px;
+  padding-right: 5px;
+}
+#featured .games .item:hover {
+  border: 3px solid #FF42A5;
+  color: #FF42A5;
+  background-color: rgb(238, 238, 238);
 }
 
 @media screen and (max-width: 576px) {
@@ -391,6 +421,13 @@ header .header .menu-area .social {
   }
   #onlineGames .games-banner-two .image-box .two {
     width: 100px;
+  }
+  #career .career {
+    grid-template-columns: 1fr;
+  }
+  #career .career .links li a {
+    color: white;
+    font-size: 12px;
   }
 }
 
